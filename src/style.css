@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #344e41;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0rem 6rem;
+}
+
+.left {
+  flex: 1;
+  padding: 0rem 2rem;
+  margin-top: 6rem;
+  display: flex;
+  border-right: solid 1px white;
+  flex-direction: column;
+
+  gap: 4rem;
+}
+
+.right {
+  flex: 1;
+  padding: 0rem 2rem;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.headings {
+  font-size: 3rem;
+}
+
+.outline {
+  color: #344e41;
+  -webkit-text-stroke: 1px white;
+  font-family: "Poppins", sans-serif;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 36rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#map {
+  height: 100px;
+  width: 100px;
+}
+
+@media screen and (max-width: 811px) {
+  .content {
+    flex-direction: column;
+  }
+  .left {
+    border: none;
+  }
+  .right {
+    align-items: flex-start;
+  }
+}
